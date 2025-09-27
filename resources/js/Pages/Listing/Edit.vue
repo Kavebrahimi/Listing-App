@@ -38,7 +38,7 @@ const form = useForm({
 
     <form  
         @submit.prevent="form.post(route('listing.update', listing.id))" 
-        class="grid grid-cols-2 gap-6"
+        class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6"
     >
       <div class="space-y-6">
         <InputField

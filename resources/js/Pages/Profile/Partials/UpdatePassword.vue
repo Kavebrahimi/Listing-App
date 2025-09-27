@@ -41,7 +41,7 @@ const form = useForm({
           v-model="form.current_password"
           inputLabel="رمزعبور فعلی"
           icon="lock"
-          class="w-1/3"
+          class="lg:w-1/3 sm:w-full"
           :error="errors.current_password"
           id="current_password"
       />
@@ -51,7 +51,7 @@ const form = useForm({
           v-model="form.password"
           inputLabel="رمزجدید"
           icon="lock"
-          class="w-1/3"
+          class="lg:w-1/3 sm:w-full"
           :error="errors.password"
           id="password"
       />
@@ -61,7 +61,7 @@ const form = useForm({
           type="password"
           inputLabel="تائید رمز"
           icon="lock"
-          class="w-1/3"
+          class="lg:w-1/3 sm:w-full"
           :error="errors.password_confirmation"
           id="password_confirmation"
       />

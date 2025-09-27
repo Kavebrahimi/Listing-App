@@ -42,7 +42,7 @@ const showDelete = ref(false);
               type="password"
               inputLabel="تائید رمز"
               icon="lock"
-              class="w-1/3"
+              class="lg:w-1/3 sm:w-full"
               :error="errors.password"
               id="password"
           />

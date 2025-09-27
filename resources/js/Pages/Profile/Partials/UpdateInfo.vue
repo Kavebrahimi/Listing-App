@@ -46,7 +46,7 @@ const resendEmail = (e) => {
           v-model="form.full_name"
           inputLabel="نام"
           icon="id-card"
-          class="w-1/3"
+          class="lg:w-1/3 sm:w-full"
           :error="errors.full_name"
           id="full_name"
       />
@@ -57,7 +57,7 @@ const resendEmail = (e) => {
           type="email"
           inputLabel="ایمیل"
           icon="at"
-          class="w-1/3"
+          class="lg:w-1/3 sm:w-full"
           :error="errors.email"
           id="email"
       />

@@ -29,9 +29,9 @@ const search = ()=>{
 <template>
   <Head title="| صفحه اصلی"/>
 
-  <div class="flex items-center justify-between mb-5 w-4/5 m-auto">
+  <div class="flex items-center justify-between mb-5 lg:w-4/5 sm:w-full m-auto">
 
-    <div class="w-1/4">
+    <div class="lg:w-1/4 sm:w-full">
       <form @submit.prevent="search">
         <InputField
             v-model="form.search"
@@ -75,8 +75,8 @@ const search = ()=>{
 
   </div>
 
-  <div class="w-4/5 m-auto" v-if="listings.data.length">
-    <div class="grid grid-cols-3 gap-6">
+  <div class="lg:w-4/5 sm:w-full m-auto" v-if="listings.data.length">
+    <div class="grid lg:grid-cols-3 gap-6 sm:grid-cols-1">
       <div v-for="listing in listings.data" :key="listing.id">
         <Card :listing="listing"/>
       </div>
@@ -87,7 +87,7 @@ const search = ()=>{
     </div>
 
   </div>
-  <div class="w-4/5 m-auto" v-else>
+  <div class="lg:w-4/5 sm:w-full m-auto" v-else>
     هیچ آیتمی وجود ندارد
   </div>
 

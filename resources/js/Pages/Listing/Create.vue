@@ -31,7 +31,7 @@ const form = useForm({
 
     <ErrorMessage :errors="form.errors"/>
 
-    <form @submit.prevent="form.post(route('listing.store'))" class="grid grid-cols-2 gap-6">
+    <form @submit.prevent="form.post(route('listing.store'))" class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6"">
       <div class="space-y-6">
         <InputField
           inputLabel="موضوع"

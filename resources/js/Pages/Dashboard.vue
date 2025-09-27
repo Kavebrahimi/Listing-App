@@ -22,13 +22,13 @@ const deleteListing = (id)=>{
   
   <Head title="| داشبورد"/>
   
-  <section class="w-4/5 m-auto">
+  <section class="lg:w-4/5 sm:w-full m-auto">
     <SessionMessage :status/>
     <div v-if="listings">
       <div v-if="Object.keys(listings.data).length">
         <div class="mb-6">
           <!--    Heading     -->
-          <div class="flex items-center justify-between mb-4">
+          <div class="flex lg:flex-row sm:flex-col items-center justify-between mb-4">
             <Title>آخرین درخواست های شما</Title>
             <div class="flex items-center gap-4 text-sm">
               <p class="text-green-500">تائید شده <i class="pi pi-check-circle"></i></p>

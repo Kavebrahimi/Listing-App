@@ -37,9 +37,9 @@ const toggleApprove = ()=>{
       {{ listing.approved ? 'ردکردن' : 'تائید' }}
     </button>
   </div>
-  <Container class="w-4/5 m-auto flex gap-4">
+  <Container class="lg:w-4/5 sm:w-full sm:flex-col sm:items-center m-auto lg:flex-row gap-4">
     
-    <div class="w-1/5 rounded-md overflow-hidden">
+    <div class="lg:w-1/5 sm:w-full sm:mb-5 rounded-md overflow-hidden">
       <img 
           :src="listing.image ? `/storage/${listing.image}` 
           : '/storage/images/listings/default.jpg' " 
@@ -48,10 +48,10 @@ const toggleApprove = ()=>{
       >
     </div>
     
-    <div class="w-3/4">
+    <div class="w-fulll">
       <!--    Listing details     -->
       <div class="mb-6">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center justify-between my-5">
           <p class="text-slate-400 w-full border-b">جزئیات درخواست</p>
 
           <!--    Listing Delete & Edit     -->

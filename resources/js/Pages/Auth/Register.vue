@@ -11,7 +11,7 @@ import { Form, useForm } from "@inertiajs/vue3";
 
 <template>
   <Head title="| ثبت نام"/>
-  <Container class="w-1/3 m-auto">
+  <Container class="lg:w-1/3 sm:w-full m-auto">
 
     <div class="mb-8 text-center">
       <Title>ساخت حساب کاربری</Title>
