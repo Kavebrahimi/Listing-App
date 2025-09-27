@@ -1,0 +1,21 @@
+<script setup>
+
+defineProps({
+  errors: Object
+});
+
+</script>
+
+<template>
+  <div v-if="Object.keys(errors).length" class="mb-4">
+    <p class="text-sm text-red-500">مشکلی پیش اومده!</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li
+          v-for="(error, i) in errors" :key="i"
+          class="text-sm text-red-500"
+      >
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+</template>
